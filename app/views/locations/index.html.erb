@@ -1,7 +1,9 @@
-<h1>EventOnly</h1>
-
-<%= render @locations %>
+<h1>Locations</h1>
 
 <p>
   <%= link_to 'New Location', new_location_path %>
 </p>
+
+<% @locations.each do |location| %>
+  <%= render @locations %>
+<% end %>

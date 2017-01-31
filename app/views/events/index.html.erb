@@ -1,0 +1,9 @@
+
+<%= render @location %>
+<% @events.each do |e|%>
+<%= e.name %><br>
+<%= e.date %><br>
+<%= e.capacity.to_i %><br>
+
+
+<% end %>
