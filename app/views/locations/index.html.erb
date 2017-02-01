@@ -5,5 +5,5 @@
 </p>
 
 <% @locations.each do |location| %>
-  <%= render @locations %>
+  <%= render partial: 'location', object: location %>
 <% end %>

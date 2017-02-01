@@ -1,14 +1,9 @@
 <!-- we have access to @location throughout our Event views, and we passed in the event object -->
-<%= form_for [@location, event] do |f| %>
+<%= form_for [@location, @event] do |f| %>
 
 <p>
   <%= f.label :name %>
   <%= f.text_field :name %>
-</p>
-
-<p>
-  <%= f.label :location_id %>
-  <%= f.text_field :city %>
 </p>
 
 <p>

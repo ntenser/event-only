@@ -1,9 +1,9 @@
+<h1>All Events</h1>
+<h3><%= link_to 'New Event', new_location_event_path %></h3>
+<%= link_to 'Show all locations', locations_path %><br>
 
-<%= render @location %>
-<% @events.each do |e|%>
-<%= e.name %><br>
-<%= e.date %><br>
-<%= e.capacity.to_i %><br>
-
-
-<% end %>
+ <br><% @events.each do |event|%>
+ Name: <%= link_to event.name, location_event_path(@location, event) %><br>
+ Date: <%= event.date %><br>
+ Capacity: <%= event.capacity.to_i %><br>
+ <% end %>
